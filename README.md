@@ -40,8 +40,8 @@ By the time you submit this project, you will have covered new ground in, and re
 ---
 
 ## Technical Requirements
-
-Your To Do Application must display tasks in a list:
+### To Do Application
+Your **To Do Application** must display tasks in a list:
 
 - The task’s title
 - An indication of whether the task is completed
