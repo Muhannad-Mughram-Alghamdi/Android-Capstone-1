@@ -47,8 +47,8 @@ Your **To Do Application** must display tasks in a list:
 - An indication of whether the task is completed or not
 - The task’s due date, if one has been provided by the user
 - If the task is past due, an indication of this fact should be shown to the user. And If the user taps on the cell, they should see a screen for editing additional task details, including:
-- - The creation date
-- - All of the information listed above
+- - - The creation date
+- - - All of the information listed above
 - Also include the extended description where the user can provide more details about the task
 
 - **The user must be able to add, delete and edit tasks. The data for the to do list must be persistent. No
