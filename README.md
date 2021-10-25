@@ -34,7 +34,7 @@ By the time you submit this project, you will have covered new ground in, and re
 - Use your programming skills to **work out the logic for an application**
 - **Separate activities** in your application
 - Build an application **to a specification that someone else gives you**
-- **Build a dynamic application that are production ready
+- **Build a dynamic application that are production ready**
 - **Create a `README.md` file that explains your app** to the world
 
 ---
