@@ -119,7 +119,7 @@ notification whether the application is in the foreground or not.
 - Work everyday, **ask questions and come to office hours** when you need to. Think about adding relevant code to your application each day, instead of, you know... _procrastinating_.
 - **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
 - **Check out Tutorial and Documentation resources** at home to better understand what you’ll be getting into.
-- **Don’t be afraid to write code that you know you will have to remove later.** Create temporary elements (View Groups and Views, etc) that trigger events if real data is not available. For example, if you’re trying to figure out how to change some text when the application is over but you haven’t developed the whole application logic, you can create a button to simulate that until then.
+- **Don’t be afraid to write code that you know you will have to remove later. (Throw Away Code)** Create temporary elements (View Groups and Views, etc) that trigger events if real data is not available. For example, if you’re trying to figure out how to change some text when the application is over but you haven’t developed the whole application logic, you can create a button to simulate that until then.
 
 1.  Create a repository on github for your project
 2.  Clone it to the projects folder on your computer
