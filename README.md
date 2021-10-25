@@ -27,7 +27,7 @@ By the time you submit this project, you will have covered new ground in, and re
 
 ## Big Goals
 
-- **Build a web application from scratch**, without a starter codebase
+- **Build a android application from scratch**, without a starter codebase
 - Use your programming skills to **work out the logic for an application**
 - **Separate activities** in your application
 - Build an application **to a specification that someone else gives you**
