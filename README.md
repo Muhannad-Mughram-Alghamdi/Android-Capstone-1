@@ -65,7 +65,7 @@ device.**
 You are encouraged to use your imagination to make this application as nice and complete as you
 wish. Below are some ideas to guide you, but you are not restricted to them:
 
-- **Data persistence** You can get extra credit if you use Room for data persis.tence.
+- **Data persistence** You can get extra credit if you use any new database for data persistence.
 - **Sorting and filtering of tasks** Enable sorting of tasks alphabetically, by due date, by creation date,
 etc.
 - **Enable filtering**. You may want to filter tasks by categories such as Done, Not Done, Due Tomorrow,
