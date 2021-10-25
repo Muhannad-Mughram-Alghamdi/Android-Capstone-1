@@ -21,6 +21,9 @@ By the time you submit this project, you will have covered new ground in, and re
 - **Programming Fundamentals**: Work with objects, arrays, events, while learning how to strategically solve problems and resolve errors.
 - **Kotlin Fundamentals**: Learned how to declare variables, write function, use class and objects to obtain the desired results. 
 - **Android Fundamentals**: Learned how to create an android application and how to implements the logic in it with layouts. 
+- **Fragments**: Learned how to create multiple fragment and navigation between them. 
+- **RecyclerView**: Learned how to iterate over the lists with RecyclerView. 
+- **Room Database**: Learned how to store your data and retrieve it whenever it is required. 
 - **Products and Teams**: Document your code and your code repository so others understand what you've built.
 
 ---
