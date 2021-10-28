@@ -1,4 +1,4 @@
-package com.example.todell.View
+package com.example.todell.View.Lists
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_Blue">#4997B4</color>
+    <color name="light_Blue2">#4FA2C0</color>
+
+    <color name="orange">#E33A19</color>
+    <color name="orange2">#E85033</color>
+
+    <color name="pinky">#BF174F</color>
+    <color name="pinky2">#D02A61</color>
+
+    <color name="purple">#982A75</color>
+    <color name="purple2">#B13E8D</color>
+
+    <color name="light_brown">#B7877C</color>
+    <color name="light_brown2">#BC9389</color>
+
+    <color name="light_pink">#B96AA3</color>
+    <color name="light_pink2">#D466B6</color>
+
+    <color name="porple_blue">#463B97</color>
+    <color name="porple_blue2">#5141C5</color>
+
+    <color name="ocean_blue">#185599</color>
+    <color name="ocean_blue2">#1F77DA</color>
+
+    <color name="light_ocean_blue">#1571B5</color>
+    <color name="light_ocean_blue2">#238DDB</color>
+
+    <color name="My_fav">#1B929C</color>
+    <color name="My_fav2">#24B4C0</color>
+
+    <color name="light_light_blue">#4997B4</color>
+    <color name="light_light_blue2">#3FA7CE</color>
+
+    <color name="cloudy_color">#99B3CE</color>
+    <color name="cloudy_color2">#C4D1DE</color>
+
+    <color name="cloudy_dark">#538384</color>
+    <color name="cloudy_dark2">#639D9E</color>
+
+    <color name="green_fav">#19977C</color>
+    <color name="green_fav2">#1DAF90</color>
+
+    <color name="google_green">#168456</color>
+    <color name="google_green2">#1BA169</color>
+
+    <color name="olive_green">#789229</color>
+    <color name="olive_green2">#92B42C</color>
+
+    <color name="gray">#91907D</color>
+    <color name="gray2">#9F9E86</color>
+
+    <color name="fav_dark_blue">#29434A</color>
+    <color name="fav_dark_blue2">#355A64</color>
+
+    <color name="almost_dark">#181D21</color>
+    <color name="almost_dark2">#2F3840</color>
+
+    <color name="gray_brown">#C7BDAE</color>
+    <color name="gray_brown2">#DAD3C9</color>
+
+    <color name="sand">#D3C39A</color>
+    <color name="sand2">#E0CC99</color>
+    <color name="black2">#292424</color>
+
+</resources>

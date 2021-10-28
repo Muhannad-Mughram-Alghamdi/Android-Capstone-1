@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:id="@+id/nav_map">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_map"
+    app:startDestination="@id/main_Screen">
 
+    <fragment
+        android:id="@+id/main_Screen"
+        android:name="com.example.todell.View.Main_Screen"
+        android:label="fragment_main__screen"
+        tools:layout="@layout/fragment_main__screen" >
+        <action
+            android:id="@+id/action_main_Screen_to_new_List"
+            app:destination="@id/new_List" />
+    </fragment>
+    <fragment
+        android:id="@+id/new_List"
+        android:name="com.example.todell.View.Lists.New_List"
+        android:label="fragment_new__list"
+        tools:layout="@layout/fragment_new__list" >
+        <action
+            android:id="@+id/action_new_List_to_task_List"
+            app:destination="@id/task_List" />
+    </fragment>
+    <fragment
+        android:id="@+id/new_Task"
+        android:name="com.example.todell.View.Tasks.New_Task"
+        android:label="fragment_new__task"
+        tools:layout="@layout/fragment_new__task" />
+    <fragment
+        android:id="@+id/task_List"
+        android:name="com.example.todell.View.Lists.Task_List"
+        android:label="fragment_task__list"
+        tools:layout="@layout/fragment_task__list" >
+        <action
+            android:id="@+id/action_task_List_to_new_Task"
+            app:destination="@id/new_Task" />
+        <action
+            android:id="@+id/action_task_List_to_view_Task"
+            app:destination="@id/view_Task" />
+        <action
+            android:id="@+id/action_task_List_to_view_List"
+            app:destination="@id/view_List" />
+    </fragment>
+    <fragment
+        android:id="@+id/view_List"
+        android:name="com.example.todell.View.Lists.View_List"
+        android:label="fragment_view__list"
+        tools:layout="@layout/fragment_view__list" />
+    <fragment
+        android:id="@+id/view_Task"
+        android:name="com.example.todell.View.Tasks.View_Task"
+        android:label="fragment_view__task"
+        tools:layout="@layout/fragment_view__task" />
 </navigation>
