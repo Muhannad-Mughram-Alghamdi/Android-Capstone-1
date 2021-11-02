@@ -23,33 +23,40 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
-            android:text="List name"
+            android:hint="List Name"
             android:textColor="@color/design_default_color_background"
             android:textSize="34sp" />
 
-        <ImageView
-            android:id="@+id/AddNewTastButton"
-            android:layout_width="37dp"
-            android:layout_height="37dp"
-            android:layout_marginLeft="185dp"
+        <ImageButton
+            android:id="@+id/AddNewTaskButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="125dp"
             android:layout_marginTop="40dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/fi_plus"
             android:src="@drawable/fi_plus" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="0dp"
-        android:layout_height="565dp"
+        android:id="@+id/taskRecyclerView"
+        android:layout_width="406dp"
+        android:layout_height="583dp"
+        android:paddingTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/ListPageEditButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/ListPageEditButton"
         android:layout_width="37dp"
         android:layout_height="37dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/color_picker"
         android:src="@drawable/color_picker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

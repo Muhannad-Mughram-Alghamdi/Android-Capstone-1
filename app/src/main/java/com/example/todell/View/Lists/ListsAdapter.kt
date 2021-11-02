@@ -1,15 +1,17 @@
-package com.example.todell.View
+package com.example.todell.View.Lists
 
-import android.os.Build.VERSION_CODES.S
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.TextView
-import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.todell.Database.Models.MainTaskWithSubTask
 import com.example.todell.Database.Models.TodellModel
 import com.example.todell.R
+import com.example.todell.Repositories.ListsRepositories
+import com.example.todell.View.ListViewModel
 
 /***
 Once you've determined your layout, you need to implement your Adapter and ViewHolder.
@@ -24,7 +26,7 @@ getItemCount()
  **/
 
 class ListsAdapter
-    (val Lists: List<TodellModel>, val listModel: ListViewModel):
+    (val Lists: List<MainTaskWithSubTask>, val listModel: ListViewModel):
     RecyclerView.Adapter<ListsAdapter.ListViewHolder>(){
 //================================================================================================================
     /**
@@ -50,11 +52,12 @@ class ListsAdapter
      */
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
 
-        val list = Lists[position]
+        val list = Lists[position].task
         holder.listTextView.text = list.listTitle
         holder.itemView.setOnClickListener { view ->
+            listModel.selectedItem = list.listId
             // post value to liveData to send data from the Main_Screen fragment to Task_List fragment
-            listModel.selectedListMutableLiveData.postValue(list)
+            //listModel.selectedListMutableLiveData.postValue(Lists[position])
             view.findNavController().navigate(R.id.action_main_Screen_to_task_List)
         }
     }
@@ -67,8 +70,7 @@ class ListsAdapter
     override fun getItemCount(): Int {
         return Lists.size
     }
-
     class ListViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        val listTextView: TextView = view.findViewById(R.id.ListNameTextView)
+        val listTextView: TextView = view.findViewById(R.id.BubbleTaskTitleTextView)
     }
 }

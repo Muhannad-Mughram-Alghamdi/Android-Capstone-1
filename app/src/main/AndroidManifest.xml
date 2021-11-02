@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Todell">
-        <activity
-            android:name=".View.Splash"
+        <activity android:name=".View.Splash"
+
+            android:theme = "@style/Theme.AppCompat.DayNight.NoActionBar"
+
             android:exported="true">
             <!--///////////////////////////////////Make splash activity Main/////////////////////////////////-->
             <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -22,6 +24,7 @@
         </activity>
         <activity
             android:name=".View.MainActivity"
+            android:theme = "@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

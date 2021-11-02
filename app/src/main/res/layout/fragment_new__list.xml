@@ -8,15 +8,16 @@
     android:background="@android:color/black"
     tools:context=".View.Lists.New_List" >
 
-    <ImageView
+    <ImageButton
         android:id="@+id/cancelCreatingNewListButton"
         android:layout_width="37dp"
         android:layout_height="37dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/fi_x"
+        android:background="@drawable/fi_x"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fi_x" />
 
     <EditText
         android:id="@+id/addNewListNameEditText"
@@ -27,9 +28,10 @@
         android:backgroundTint="@color/black2"
         android:ems="10"
         android:gravity="center"
+        android:hint="List's Name"
         android:inputType="textPersonName"
-        android:text="List's Name"
         android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -51,13 +53,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addNewListNameEditText" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/checkNewListButton"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginBottom="15dp"
-        android:src="@drawable/checkmark"
+        android:background="@drawable/checkmark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/checkmark" />
 </androidx.constraintlayout.widget.ConstraintLayout>

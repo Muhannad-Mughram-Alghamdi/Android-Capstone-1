@@ -8,17 +8,18 @@
     android:background="@android:color/black"
     tools:context=".View.Lists.View_List" >
 
-    <ImageView
+    <ImageButton
         android:id="@+id/cancelViewingNewListButton"
         android:layout_width="37dp"
         android:layout_height="37dp"
         android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
-        android:src="@drawable/fi_x"
+        android:background="@drawable/fi_x"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fi_x" />
 
     <EditText
         android:id="@+id/editListNameEditText"
@@ -32,7 +33,6 @@
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:text="nmmnmn"
         android:textColor="@color/design_default_color_background"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,28 +54,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editListNameEditText" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/checkEditListButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/checkmark"
+        android:background="@drawable/checkmark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/checkmark" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <ImageButton
+        android:id="@+id/deleteListEditListButton"
         android:layout_width="36dp"
         android:layout_height="35dp"
         android:layout_marginStart="22dp"
         android:layout_marginBottom="28dp"
-        android:src="@drawable/trash"
+        android:background="@drawable/trash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.027"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/trash" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

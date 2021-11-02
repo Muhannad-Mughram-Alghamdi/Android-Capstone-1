@@ -13,16 +13,15 @@
         <action
             android:id="@+id/action_main_Screen_to_new_List"
             app:destination="@id/new_List" />
+        <action
+            android:id="@+id/action_main_Screen_to_task_List"
+            app:destination="@id/task_List" />
     </fragment>
     <fragment
         android:id="@+id/new_List"
         android:name="com.example.todell.View.Lists.New_List"
         android:label="fragment_new__list"
-        tools:layout="@layout/fragment_new__list" >
-        <action
-            android:id="@+id/action_new_List_to_task_List"
-            app:destination="@id/task_List" />
-    </fragment>
+        tools:layout="@layout/fragment_new__list" />
     <fragment
         android:id="@+id/new_Task"
         android:name="com.example.todell.View.Tasks.New_Task"

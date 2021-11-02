@@ -8,61 +8,70 @@
     android:background="@android:color/black"
     tools:context=".View.Main_Screen" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="390dp"
+        android:layout_height="82dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
 
         <TextView
             android:id="@+id/TextViewList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
             android:text="Lists"
             android:textColor="@color/design_default_color_on_primary"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/mainScreenAddListButton"
             android:layout_width="37dp"
             android:layout_height="37dp"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="41dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/fi_plus" />
-    </LinearLayout>
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/fi_plus"
+            android:src="@drawable/fi_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.546" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listRecyclerView"
         android:layout_width="412dp"
-        android:layout_height="563dp"
+        android:layout_height="605dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="408dp"
-        android:layout_height="78dp"
+        android:layout_width="410dp"
+        android:layout_height="37dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/mainScreenSideMenuButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="350dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/menu"
             android:src="@drawable/menu" />
     </LinearLayout>
 

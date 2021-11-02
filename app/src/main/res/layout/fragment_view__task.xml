@@ -8,17 +8,33 @@
     android:background="@color/light_Blue"
     tools:context=".View.Tasks.View_Task" >
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/newCalendarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble"
+        android:backgroundTint="@color/light_Blue2"
+        android:gravity="center"
+        android:text="Ramind me"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editNoteEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTaskNameEditText" />
+
+    <ImageButton
         android:id="@+id/cancelEditTaskButton"
         android:layout_width="37dp"
         android:layout_height="37dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/fi_x"
+        android:background="@drawable/fi_x"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fi_x" />
 
     <EditText
         android:id="@+id/editTaskNameEditText"
@@ -35,4 +51,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNoteEditText"
+        android:layout_width="323dp"
+        android:layout_height="355dp"
+        android:background="@drawable/bubble"
+        android:backgroundTint="@color/light_Blue2"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTaskNameEditText"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <ImageButton
+        android:id="@+id/checkEditTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/checkmark"
+        android:src="@drawable/checkmark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/deleteEditTaskButton"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/trash"
+        android:src="@drawable/trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
