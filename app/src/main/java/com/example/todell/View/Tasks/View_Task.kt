@@ -1,5 +1,6 @@
 package com.example.todell.View.Tasks
 
+import android.app.DatePickerDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,7 +18,8 @@ import com.example.todell.View.ListViewModel
 
 class View_Task : Fragment() {
     private val listViewModel : ListViewModel by activityViewModels()
-    private lateinit var selectedItem : TodellModel
+    private lateinit var selectedItem : TodellModelTask
+    private lateinit var dueDatePickerDialog: DatePickerDialog
 //==================================================================================================
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,30 +32,32 @@ class View_Task : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val mainId : Int = listViewModel.selectedItem
+
         val cancelEditTaskButton : ImageButton = view.findViewById(R.id.cancelEditTaskButton)
         val editTaskNameEditText : EditText = view.findViewById(R.id.editTaskNameEditText)
         val editNoteEditText : EditText = view.findViewById(R.id.editNoteEditText)
         val deleteEditTaskButton : ImageButton = view.findViewById(R.id.deleteEditTaskButton)
         val checkEditTaskButton : ImageButton = view.findViewById(R.id.checkEditTaskButton)
 
-        listViewModel.selectedListMutableLiveData.observe(viewLifecycleOwner, Observer {
+        listViewModel.selectedSubTaskMutableLiveData.observe(viewLifecycleOwner, Observer {
             it?.let {
-//                editTaskNameEditText.text =
-//                editNoteEditText.setText()
-//                selectedItem = it.task
+                selectedItem = it
             }
         })
         cancelEditTaskButton.setOnClickListener {
             findNavController().popBackStack()
         }
         deleteEditTaskButton.setOnClickListener {
-            listViewModel.deleteList(selectedItem)
+            listViewModel.deleteTask(selectedItem)
             findNavController().popBackStack()
         }
         checkEditTaskButton.setOnClickListener {
             val taskName = editTaskNameEditText.text.toString()
             val noteEdit = editNoteEditText.text.toString()
-            listViewModel.addTask(TodellModelTask(taskName,noteEdit,"",1))
+            val date = "${dueDatePickerDialog.datePicker.year}/${dueDatePickerDialog.datePicker.month+1}/${dueDatePickerDialog.datePicker.dayOfMonth}"
+            listViewModel.updateTask(TodellModelTask(taskName,noteEdit,date,mainId))
+            findNavController().popBackStack()
         }
     }
 

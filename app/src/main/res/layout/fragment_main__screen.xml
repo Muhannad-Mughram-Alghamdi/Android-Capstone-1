@@ -61,18 +61,6 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/mainScreenSideMenuButton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="40dp"
-            android:background="@drawable/menu"
-            android:src="@drawable/menu" />
-    </LinearLayout>
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

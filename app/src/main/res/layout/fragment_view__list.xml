@@ -79,5 +79,193 @@
         app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
         android:src="@drawable/trash" />
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="433dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/checkEditListButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickColorTextViewEdit">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/light_Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/colorpicker" />
+
+            <ImageButton
+                android:id="@+id/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/colorp" />
+
+            <ImageButton
+                android:id="@+id/pinky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cppinky" />
+
+            <ImageButton
+                android:id="@+id/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cppurple" />
+
+            <ImageButton
+                android:id="@+id/light_brown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cplightbrown" />
+        </TableRow>
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/light_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cplightpink" />
+
+            <ImageButton
+                android:id="@+id/porple_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpporpleblue" />
+
+            <ImageButton
+                android:id="@+id/ocean_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpoceanblue" />
+
+            <ImageButton
+                android:id="@+id/light_ocean_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cplightoceanblue" />
+
+            <ImageButton
+                android:id="@+id/My_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpmyfav" />
+        </TableRow>
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/light_light_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cplightlightblue" />
+
+            <ImageButton
+                android:id="@+id/cloudy_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpcloudy" />
+
+            <ImageButton
+                android:id="@+id/cloudy_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpcloudydark" />
+
+            <ImageButton
+                android:id="@+id/green_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpgreenfav" />
+
+            <ImageButton
+                android:id="@+id/google_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpgooglegreen" />
+        </TableRow>
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/olive_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpolivegreen" />
+
+            <ImageButton
+                android:id="@+id/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpgray" />
+
+            <ImageButton
+                android:id="@+id/fav_dark_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpfavdarkblue" />
+
+            <ImageButton
+                android:id="@+id/almost_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpalmostdark" />
+
+            <ImageButton
+                android:id="@+id/gray_brown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpgraybrown" />
+
+        </TableRow>
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/sand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:src="@drawable/cpsand" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

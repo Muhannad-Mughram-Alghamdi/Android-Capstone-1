@@ -55,7 +55,7 @@ class ListsAdapter
         val list = Lists[position].task
         holder.listTextView.text = list.listTitle
         holder.itemView.setOnClickListener { view ->
-            listModel.selectedItem = list.listId
+            listModel.selectedListMutableLiveData.postValue(Lists[position])
             // post value to liveData to send data from the Main_Screen fragment to Task_List fragment
             //listModel.selectedListMutableLiveData.postValue(Lists[position])
             view.findNavController().navigate(R.id.action_main_Screen_to_task_List)

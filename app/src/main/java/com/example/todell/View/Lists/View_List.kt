@@ -5,14 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.TextView
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import com.example.todell.Database.Models.MainTaskWithSubTask
 import com.example.todell.Database.Models.TodellModel
 import com.example.todell.R
 import com.example.todell.View.ListViewModel
@@ -37,10 +34,9 @@ class View_List : Fragment() {
         val deleteListEditListButton : ImageButton = view.findViewById(R.id.deleteListEditListButton)
         val cancelViewingNewListButton : ImageButton = view.findViewById(R.id.cancelViewingNewListButton)
 
-
         listViewModel.selectedListMutableLiveData.observe(viewLifecycleOwner, Observer {
             it?.let {
-
+                selectedItem = it.task
             }
         })
         checkEditListButton.setOnClickListener {
@@ -52,6 +48,8 @@ class View_List : Fragment() {
         }
         deleteListEditListButton.setOnClickListener {
             listViewModel.deleteList(selectedItem)
+            findNavController().popBackStack()
+            findNavController().popBackStack()
         }
         cancelViewingNewListButton.setOnClickListener {
             findNavController().popBackStack()

@@ -45,9 +45,10 @@
         android:backgroundTint="@color/light_Blue2"
         android:ems="10"
         android:gravity="center"
+        android:hint="Edit Task Name"
         android:inputType="textPersonName"
-        android:text="Edit Task Name"
         android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

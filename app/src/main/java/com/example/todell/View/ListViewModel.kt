@@ -19,6 +19,8 @@ class ListViewModel : ViewModel() {
     var selectedItem = 0
 
     var selectedListMutableLiveData = MutableLiveData<MainTaskWithSubTask>()
+    var selectedSubTaskMutableLiveData = MutableLiveData<TodellModelTask>()
+
     var selectedTaskMutableLiveData = MutableLiveData<List<TodellModelTask>>()
 
 
