@@ -45,7 +45,7 @@ Todell is a to do list app, meant to be joyfull and easy to use for daily tasks
 
 ### FEATURE
 ------------------
-Using two tables in the database
+* Using two tables in the database
 
 ### INSTALLATION
 ------------------
