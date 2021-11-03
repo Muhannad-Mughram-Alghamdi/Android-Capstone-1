@@ -1,6 +1,5 @@
 ![alt text](https://camo.githubusercontent.com/37ca472e2afb74974a0314d89af8f470422a79582bed0d188f9927777230195d/68747470733a2f2f6c61756e63682e73612f6173736574732f696d616765732f6c6f676f732f7475776169712d61636164656d792d6c6f676f2e737667)
 # Todell
----------------------
 
 ### DEMO
 ------
@@ -65,20 +64,12 @@ inside the task you can discribe or have a little note about the task or item yo
 after finishing you writting down your tasks, you will have a list of items inside the grocery list task you have created,every time you get an item from the list, 
 there is a little checkbox next to the item title,when check the title will be crossed indecating that you have done purcahsing the item.  
 
-### TESTS
-------------
-
 ### COLLABORATORS
 ------------------
 * Mr. Saad
 * Mr. Mohammad 
 * Mr. Abdulaziz Alrajih
 * Mr. Bilal AlRamah
-
-### CONTREBUTIONS INSTRUCTIONS
---------------------------------
-
-
 
 ### UNSOLVED PROBLEMS
 ---------------------
@@ -90,4 +81,4 @@ there is a little checkbox next to the item title,when check the title will be c
 
 ### CONTACT INFORMATION
 ------------------------
-*Email : MuahnnadAlghamdi@outlook.com 
+Email : MuahnnadAlghamdi@outlook.com 
