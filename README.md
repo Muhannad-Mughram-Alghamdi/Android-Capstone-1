@@ -25,11 +25,11 @@ Todell is a to do list app, meant to be joyfull and easy to use for daily tasks
 
 ### APPLICATION
 ----------------
-![gitHub link app](https://github.com/Muhannad-Mughram-Alghamdi/Android-Capstone-1)
+![gitHub link](https://github.com/Muhannad-Mughram-Alghamdi/Android-Capstone-1)
 
 ### WIREFRAMES AND USER STORIES
 -------------------------------
-links
+![miro link](https://miro.com/app/board/o9J_lmYkuvY=/?invite_link_id=341886714154)
 
 ### PLANNING
 -------------
