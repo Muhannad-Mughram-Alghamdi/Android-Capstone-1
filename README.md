@@ -32,7 +32,14 @@ Todell is a to do list app, meant to be joyfull and easy to use for daily tasks
 
 ### PLANNING
 -------------
+Creating the desighn of the application, to understand every element on the app, and to map out the whole project for the programming 
+part.
 
+the second phase is to apply the design from fegma into the xml files of the app. 
+
+the third phase is to design the database to save the data from the user, to make sure it was saved while the app closed.
+
+apply logical codes into the app, to create the app interactions for the to work.
 
 ### TECHNOLOGY STACK
 ---------------------
